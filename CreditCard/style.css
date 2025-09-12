@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  color: white;
+}
+
+body {
+  /* width: 100vw; */
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e3f2fd;
+}
+
+.container {
+  background-image: url(images/bg.png);
+  background-size: cover;
+  border-radius: 12px;
+  padding: 20px;
+  max-width: 380px;
+  width: 100%;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2), 0 6px 10px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo img {
+  width: 48px;
+}
+
+span {
+  margin-left: 9px;
+  color: white;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.chip img {
+  width: 60px;
+}
+
+.credentials {
+    margin-top: 40px;
+}
+
+.card-number:nth-child(1) {
+  font-size: 12px;
+  margin-bottom: 9px;
+}
+
+.number {
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+.card-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 14px;
+}
+
+.name {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.text {
+    font-size: 12px;
+}
+
+.date {
+     font-size: 14px;
+}
