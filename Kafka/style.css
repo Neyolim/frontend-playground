@@ -26,7 +26,7 @@
   font-size: 2px;
 }
 
-/* Styles for the nav links */
+/* Styles for the navbar */
 
 .nav-links {
   margin-left: 42px;
@@ -53,16 +53,14 @@
 }
 
 .nav-links ul li a:hover {
-  color: #007BFF;
+  color: #007bff;
 }
-
-/* Styles for the nav button  */
 
 .btn {
   margin-left: 30px;
 }
 
-.nav-btn{
+.nav-btn {
   width: 194px;
   height: 42px;
   color: white;
@@ -76,24 +74,21 @@
 }
 
 .nav-btn:hover {
-  background-color: #4C5A6C;
+  background-color: #4c5a6c;
   transform: translateY(-2px);
 }
 
-
-/* Styles for the nav search icon  */
-
 .nav-search {
-   margin-left: 115px;
-   border: solid #495057b7 2px;
-   width: 40px;
-   height: 40px;
-   border-radius: 50%;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   outline: none;
-   cursor: pointer;
+  margin-left: 115px;
+  border: solid #495057b7 2px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  outline: none;
+  cursor: pointer;
 }
 
 .nav-search i {
@@ -106,5 +101,94 @@
 .hero {
   height: 922px;
   width: 100%;
-  background-color: #C5C5C9;
+  background-color: #c5c5c9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero-img {
+  margin-top: 70px;
+}
+
+.hero-img img {
+  width: 299px;
+  height: 326px;
+}
+
+.hero-btns {
+  display: flex;
+}
+
+.btn-1,
+.btn-2 {
+  width: 178px;
+  height: 47px;
+  padding: 8px 16px;
+  margin: 0px 16px 24px 0px;
+  border-radius: 8px;
+  outline: none;
+  border: none;
+  font-size: 20px;
+}
+
+.btn-1 {
+  color: white;
+  background-color: #007bff;
+}
+
+.btn-2 {
+  color: black;
+  background-color: #49505789;
+}
+
+.hero-para p {
+  margin-top: 50px;
+  font-size: 20px;
+  font-style: italic;
+  font-weight: 300;
+}
+
+.down-arrow {
+  margin-top: 30px;
+}
+
+.down-arrow i {
+  font-size: 64px;
+  color: #c5c5c9;
+  border-radius: 50%;
+  background-color: black;
+}
+
+/* Styles for about section  */
+
+.about {
+  width: 78%;
+  height: 304px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.about h1 {
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 48px;
+}
+
+.about span {
+  opacity: 0;
+}
+
+.about span:hover {
+  opacity: 1;
+  color: #007bff;
+}
+
+.about p {
+  text-align: center;
+  font-size: 16px;
+  margin-top: 10px;
 }
