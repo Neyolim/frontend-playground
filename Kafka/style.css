@@ -42,7 +42,7 @@
 .nav-links ul a {
   text-decoration: none;
   color: black;
-  font-size: 15px;
+  font-size: 17px;
   line-height: 21px;
   font-weight: 700;
 }
@@ -136,7 +136,7 @@
   align-items: center;
   transition: all 0.3s ease;
   gap: 7px;
-  box-shadow: 12px 15px 32px -10px rgba(0,0,0,0.1);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075);
 }
 
 .btn-1 {
@@ -216,15 +216,15 @@
   margin-top: 15px;
 }
 
-/* Styles for services section  */
+/* Styles for clients section  */
 
-.services {
+.clients {
   width: 100%;
   height: 576px;
   background-color: #403F4C;
 }
 
-.services i {
+.clients i {
   color: white;
   font-size: 120px;
   position: relative;
@@ -232,4 +232,35 @@
   left: 46.6%;
 }
 
+.client-container {
+  display: flex;
+  justify-content: space-around;
+}
 
+.industry {
+  display: flex;
+  flex-direction: column;
+}
+
+.industry-icon i {
+  
+  font-size: 60px;
+}
+
+.industry-title {
+  text-align: center;
+}
+
+.industry-title h4 {
+  color: white;
+}
+
+.industry-of {
+  text-align: center;
+  margin-top: 10px;
+  font-weight: 700;
+}
+
+.industry-of p {
+  color: white;
+}
