@@ -16,7 +16,6 @@
 }
 
 .nav-options {
-  width: 70%;
   display: flex;
   align-items: center;
   margin-left: 20px;
@@ -64,20 +63,20 @@
   width: 194px;
   height: 42px;
   color: white;
-  background: linear-gradient(180deg, #4a5568, #2d3748 );
+  background: linear-gradient(180deg, #4a5568, #2d3748);
   outline: none;
   border: none;
   font-weight: 700;
-  font-size: 15px;
+  font-size: 14px;
   border-radius: 8px;
   transition: all 0.3s ease;
-  box-shadow: 12px 15px 32px -10px rgba(0,0,0,0.1);
+  box-shadow: 12px 15px 32px -10px rgba(0, 0, 0, 0.1);
 }
 
 .nav-btn:hover {
   background-color: #4c5a6c;
   transform: translateY(-2px);
-  box-shadow: 20px 38px 30px -10px rgba(0,0,0,0.1);
+  box-shadow: 20px 38px 30px -10px rgba(0, 0, 0, 0.1);
 }
 
 .nav-search {
@@ -136,7 +135,9 @@
   align-items: center;
   transition: all 0.3s ease;
   gap: 7px;
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.15),
+    0 1px 1px rgba(0, 0, 0, 0.075);
 }
 
 .btn-1 {
@@ -145,12 +146,13 @@
 }
 
 .btn-1:hover {
-  background-color: #1966BA;
+  background-color: #1966ba;
   transform: translateY(-2px);
-  box-shadow: 20px 38px 30px -10px rgba(0,0,0,0.1);
+  box-shadow: 20px 38px 30px -10px rgba(0, 0, 0, 0.1);
 }
 
-.btn-1 i, .btn-2 i  {
+.btn-1 i,
+.btn-2 i {
   font-size: 25px;
 }
 
@@ -160,9 +162,9 @@
 }
 
 .btn-2:hover {
-  background-color: #6C7378;
+  background-color: #6c7378;
   transform: translateY(-2px);
-  box-shadow: 20px 38px 30px -10px rgba(0,0,0,0.1);
+  box-shadow: 20px 38px 30px -10px rgba(0, 0, 0, 0.1);
 }
 
 .hero-para p {
@@ -185,7 +187,7 @@
 
 /* Styles for about section  */
 
-.about {
+.about, .capabitlites, .trusts  {
   width: 78%;
   height: 304px;
   margin: auto;
@@ -195,22 +197,22 @@
   justify-content: center;
 }
 
-.about h1 {
+.about h1, .capabitlites h1,  .trusts h1 {
   font-size: 42px;
   font-weight: 400;
   line-height: 48px;
 }
 
-.about span {
+.about span, .capabitlites span,  .trusts span {
   opacity: 0;
 }
 
-.about span:hover {
+.about span:hover, .capabitlites span:hover,  .trusts span:hover{
   opacity: 1;
   color: #007bff;
 }
 
-.about p {
+.about p, .capabitlites p,  .trusts p {
   text-align: center;
   font-size: 16px;
   margin-top: 15px;
@@ -218,49 +220,94 @@
 
 /* Styles for clients section  */
 
-.clients {
+.clients, .features, .benefits {
   width: 100%;
   height: 576px;
-  background-color: #403F4C;
+  background-color: #403f4c;
 }
 
-.clients i {
+.arrow {
+  height: 97px;
+}
+
+.arrow i {
   color: white;
   font-size: 120px;
   position: relative;
   top: -51px;
-  left: 46.6%;
+  left: 46.2%;
 }
 
-.client-container {
+.client-container, .features-container, .benefits-container {
   display: flex;
   justify-content: space-around;
+  margin-top: -8px;
 }
 
-.industry {
+.industry, .feature, .benefit{
   display: flex;
   flex-direction: column;
+  width: 336px;
+  height: 138px;
 }
 
-.industry-icon i {
-  
-  font-size: 60px;
-}
-
-.industry-title {
+.industry-icon, .feature-icon, .benefit-icon {
   text-align: center;
+  margin-bottom: 25px;
 }
 
-.industry-title h4 {
+.industry-icon i, .feature-icon i,  .benefit-icon i  {
+  font-size: 50px;
+  color: white;
+}
+
+.industry-title, .feature-title, .benefit-title {
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.industry-title h4, .feature-title h4, .benefit-title h4 {
   color: white;
 }
 
 .industry-of {
   text-align: center;
-  margin-top: 10px;
   font-weight: 700;
 }
 
-.industry-of p {
+.industry-of p,  .feature-of p, .benefit-of p {
   color: white;
 }
+
+ .feature-of, .benefit-of {
+  text-align: center;
+ }
+
+ .client-paragraph{
+  color: white;
+  font-size: 16px;
+  text-align: center;
+  margin-top: 35px;
+  font-size: 400;
+ }
+
+ .client-btn{
+  text-align: center;
+  margin-top: 20px;
+ }
+
+ .client-btn button{
+  color: white;
+  font-size: 20px;
+  background-color: #007bff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+ }
+
+ .client-btn button i {
+  font-size: 20px;
+  margin-left: 8px;
+ }
+
+
