@@ -187,7 +187,9 @@
 
 /* Styles for about section  */
 
-.about, .capabitlites, .trusts  {
+.about,
+.capabitlites,
+.trusts {
   width: 78%;
   height: 304px;
   margin: auto;
@@ -197,22 +199,30 @@
   justify-content: center;
 }
 
-.about h1, .capabitlites h1,  .trusts h1 {
+.about h1,
+.capabitlites h1,
+.trusts h1 {
   font-size: 42px;
   font-weight: 400;
   line-height: 48px;
 }
 
-.about span, .capabitlites span,  .trusts span {
+.about span,
+.capabitlites span,
+.trusts span {
   opacity: 0;
 }
 
-.about span:hover, .capabitlites span:hover,  .trusts span:hover{
+.about span:hover,
+.capabitlites span:hover,
+.trusts span:hover {
   opacity: 1;
   color: #007bff;
 }
 
-.about p, .capabitlites p,  .trusts p {
+.about p,
+.capabitlites p,
+.trusts p {
   text-align: center;
   font-size: 16px;
   margin-top: 15px;
@@ -220,7 +230,9 @@
 
 /* Styles for clients section  */
 
-.clients, .features, .benefits {
+.clients,
+.features,
+.benefits {
   width: 100%;
   height: 576px;
   background-color: #403f4c;
@@ -238,35 +250,47 @@
   left: 46.2%;
 }
 
-.client-container, .features-container, .benefits-container {
+.client-container,
+.features-container,
+.benefits-container {
   display: flex;
   justify-content: space-around;
   margin-top: -8px;
 }
 
-.industry, .feature, .benefit{
+.industry,
+.feature,
+.benefit {
   display: flex;
   flex-direction: column;
   width: 336px;
   height: 138px;
 }
 
-.industry-icon, .feature-icon, .benefit-icon {
+.industry-icon,
+.feature-icon,
+.benefit-icon {
   text-align: center;
   margin-bottom: 25px;
 }
 
-.industry-icon i, .feature-icon i,  .benefit-icon i  {
+.industry-icon i,
+.feature-icon i,
+.benefit-icon i {
   font-size: 50px;
   color: white;
 }
 
-.industry-title, .feature-title, .benefit-title {
+.industry-title,
+.feature-title,
+.benefit-title {
   text-align: center;
   margin-bottom: 5px;
 }
 
-.industry-title h4, .feature-title h4, .benefit-title h4 {
+.industry-title h4,
+.feature-title h4,
+.benefit-title h4 {
   color: white;
 }
 
@@ -275,77 +299,102 @@
   font-weight: 700;
 }
 
-.industry-of p,  .feature-of p, .benefit-of p {
+.industry-of p,
+.feature-of p,
+.benefit-of p {
   color: white;
 }
 
-.feature-of p, .benefit-of p {
+.feature-of p,
+.benefit-of p {
   font-size: 14px;
 }
 
- .feature-of, .benefit-of {
+.feature-of,
+.benefit-of {
   text-align: center;
- }
+}
 
- .client-paragraph{
+.client-paragraph {
   color: white;
   font-size: 16px;
   text-align: center;
   margin-top: 35px;
   font-size: 400;
- }
+}
 
- .client-btn{
+.client-btn {
   text-align: center;
   margin-top: 20px;
- }
+}
 
- .client-btn button{
+.client-btn button {
   color: white;
   font-size: 20px;
   background-color: #007bff;
   border: none;
   padding: 8px 16px;
   border-radius: 8px;
- }
+}
 
- .client-btn button i {
+.client-btn button i {
   font-size: 20px;
   margin-left: 8px;
- }
+}
 
- hr {
+hr {
   color: white;
-  height: 0.2px;
- }
+}
 
 /* Styles for footer section  */
 
 footer {
   width: 100%;
   height: 70px;
-  background-color: #403F4C;
+  background-color: #403f4c;
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 
-.socials{
-  color: #6C757D;
+.socials {
+  color: #6c757d;
   font-size: 22px;
+  gap: 8px;
 }
 
+.socials i:hover {
+  color: #212529;
+}
 
-.footer-texts p, .cta {
-color: #565C6A;
-text-align: center;
-font-size: 11px;
+.footer-texts {
+  flex-basis: 60%;
+}
+
+.footer-texts p,
+.cta {
+  color: #6c757d;
+  text-align: center;
+  font-size: 12px;
 }
 
 .cta ul {
   text-align: center;
   list-style: none;
   display: flex;
+  gap: 4px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2px;
+}
+
+.cta ul li span {
+  color: white;
+}
+
+.cta ul li:hover {
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 .kafka-logo img {
@@ -353,6 +402,17 @@ font-size: 11px;
   height: 44px;
 }
 
+.kafka-logo img:hover {
+  animation: spinAround 0.2s linear infinite;
+}
 
+@keyframes spinAround {
+  from{
+    transition: rotate(0deg);
+  }
 
+  to{
+    transform: rotate(360deg);
+  }
+}
 
