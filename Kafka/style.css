@@ -292,6 +292,7 @@
 .feature-title h4,
 .benefit-title h4 {
   color: white;
+  font-weight: 500;
 }
 
 .industry-of {
@@ -407,12 +408,51 @@ footer {
 }
 
 @keyframes spinAround {
-  from{
+  from {
     transition: rotate(0deg);
   }
 
-  to{
+  to {
     transform: rotate(360deg);
   }
+}
+
+/* Styles for the dropdowns */
+
+.dropdown-selected {
+  position: relative;
+}
+
+.dropdown {
+  position: absolute;
+  background-color: white;
+  height: 310px;
+  width: 216px;
+  border-radius: 3px;
+  flex-direction: column;
+  top: 100%;
+  left: -11px;
+  box-shadow: 5px -5px 15px -3px rgba(0,0,0,0.1);
+  overflow-y: scroll;
+  padding: 0; 
+  margin: 0;  
+  display: none !important; 
+}
+
+.dropdown li {
+  list-style: none;
+  width: 100%;             
+  text-align: center;      
+  padding: 12px 0;         
+  box-sizing: border-box;  
+}
+
+.dropdown li:hover {
+  background-color: rgba(158, 3, 3, 0.15);
+  cursor: pointer;
+}
+
+.dropdown-selected:hover .dropdown {
+  display: flex !important;
 }
 
