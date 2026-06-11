@@ -426,25 +426,26 @@ footer {
 .dropdown {
   position: absolute;
   background-color: white;
-  height: 310px;
+  height: 300px;
   width: 216px;
   border-radius: 3px;
   flex-direction: column;
   top: 100%;
   left: -11px;
-  box-shadow: 5px -5px 15px -3px rgba(0,0,0,0.1);
-  overflow-y: scroll;
-  padding: 0; 
-  margin: 0;  
-  display: none !important; 
+  box-shadow: 5px -5px 15px -3px rgba(0, 0, 0, 0.1);
+  /* overflow-x: hidden; */
+  overflow-y: auto;
+  padding: 0 !important;
+  padding-left: 0 !important;
+  margin: 0;
+  display: none !important;
 }
 
 .dropdown li {
   list-style: none;
-  width: 100%;             
-  text-align: center;      
-  padding: 12px 0;         
-  box-sizing: border-box;  
+  text-align: center;
+  /* padding: 12px 0;          */
+  box-sizing: border-box;
 }
 
 .dropdown li:hover {
@@ -455,4 +456,3 @@ footer {
 .dropdown-selected:hover .dropdown {
   display: flex !important;
 }
-
