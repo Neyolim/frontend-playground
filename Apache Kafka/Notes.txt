@@ -1,0 +1,112 @@
+APACHE KAFKA CLONE - LESSONS LEARNED
+
+Mistakes Made:
+
+1. Used fixed heights (height: 922px, 576px, etc.) for major sections.
+
+   * This can break layouts when content changes or on different screen sizes.
+
+2. Relied heavily on margin-left and margin-top for positioning.
+
+   * Layouts should be controlled primarily with Flexbox or Grid.
+
+3. Did not make the website responsive.
+
+   * No media queries were implemented for mobile or tablet devices.
+
+4. Used several "magic numbers" (e.g., left: 46.2%, top: -51px).
+
+   * These values were chosen visually rather than through proper layout design.
+
+5. Repeated similar CSS for cards/components.
+
+   * Industry, Feature, and Benefit cards could have shared a reusable base class.
+
+6. Used <br> tags for spacing.
+
+   * Spacing should be handled through CSS margins and padding.
+
+7. Had a typo in class naming ("capabitlites" instead of "capabilities").
+
+   * Naming consistency is important for maintainability.
+
+8. Used empty links (href="").
+
+   * Empty links can cause unnecessary page refreshes.
+
+9. Search icon was built using a div instead of a button.
+
+   * Interactive elements should use semantic HTML.
+
+10. Accessibility was largely ignored.
+
+    * No aria-labels, focus states, or keyboard accessibility considerations.
+
+11. Repeated color values throughout the CSS.
+
+    * CSS variables were not used.
+
+12. Used naming patterns like btn-1 and btn-2.
+
+    * Component-based naming would scale better.
+
+13. Navbar layout depended on manual spacing.
+
+    * Changes to content could easily break the layout.
+
+14. Animation keyframes contained an incorrect property.
+
+    * Used transition instead of transform inside keyframes.
+
+15. Incorrect CSS property used:
+
+    * font-size: 400 should have been font-weight: 400.
+
+Improvements for Next Project:
+
+1. Use min-height and padding instead of fixed heights whenever possible.
+
+2. Use Flexbox and CSS Grid for layout positioning rather than large margins.
+
+3. Build mobile responsiveness from the beginning.
+
+   * Add media queries and test on multiple screen sizes.
+
+4. Avoid magic numbers.
+
+   * Let layout systems handle positioning.
+
+5. Create reusable component classes.
+
+   * Example: card, button, section-title, etc.
+
+6. Use CSS custom properties (variables).
+
+   * Define colors, spacing, and fonts in :root.
+
+7. Learn and apply BEM naming conventions.
+
+   * Example: feature__icon, button--primary.
+
+8. Use semantic HTML whenever possible.
+
+   * button, article, section, nav, header, footer.
+
+9. Improve accessibility.
+
+   * Add aria-labels, keyboard navigation, and focus styles.
+
+10. Use CSS for spacing instead of <br> tags.
+
+11. Test on desktop, tablet, and mobile before considering a project complete.
+
+12. Reduce code duplication and prioritize maintainability.
+
+13. Think about scalability.
+
+* Write code as if another developer will maintain it later.
+
+14. Continue focusing on clean structure and readability over visual perfection.
+
+Overall Result:
+The project successfully recreated the design and functionality of the target website. The next major areas of growth are responsiveness, maintainability, accessibility, and professional CSS architecture.
