@@ -84,7 +84,7 @@ nav {
 }
 
 .hero__image {
-  width: 810px; 
+  width: 810px;
   height: 370px;
 }
 
@@ -167,6 +167,7 @@ nav {
 .hightlight {
   color: #387ed1;
   cursor: pointer;
+  text-decoration: none;
 }
 
 .hightlight:hover {
@@ -183,15 +184,45 @@ nav {
   text-align: center;
 }
 
-.ecosystem_link a{
-   text-decoration: none;
-   color: #387ed1;
-   font-size: 16px;
-   font-weight: 500;
-   margin-left: 20px;
+.ecosystem_link a {
+  text-decoration: none;
+  color: #387ed1;
+  font-size: 16px;
+  font-weight: 500;
+  margin-left: 20px;
 }
 
 .ecosystem_image {
   width: 695px;
   height: 680px;
+}
+
+/* Styles for the Banner Section  */
+
+.banner {
+  background-color: #f6fbff;
+}
+
+.banner__container {
+  height: 87px;
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.kite_logo {
+  width: 202px;
+  height: 28px;
+}
+
+.dash_logo {
+  width: 176px;
+  height: 25px;
+}
+
+.banner p {
+  font-size: 14px;
+  color: rgb(102, 102, 102);
+  padding: 0px 30px;
 }
