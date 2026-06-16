@@ -8,13 +8,16 @@
 .container {
   width: 72.5%;
   margin: 0 auto;
+}
+
+/* Styles for the header section  */
+
+.nav__container {
   height: 75px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-
-/* Styles for the header section  */
 
 nav {
   box-shadow: 2px 1px 2px #eee;
@@ -61,3 +64,55 @@ nav {
   background-color: white;
   cursor: pointer;
 }
+
+@media (max-width: 960px) {
+  .nav__links {
+    display: none;
+  }
+}
+
+/* Styles for the Hero Section  */
+
+.hero__container {
+  margin-top: 75px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  height: 681px;
+}
+
+.hero__image {
+  width: 810px;
+  height: 370px;
+}
+
+.hero__heading{
+  font-size: 1.90rem;
+  color:rgb(66, 66, 66);
+  margin-top: 50px;
+  font-weight: 500;
+}
+
+.hero__description{
+  margin-top: 10px;
+  font-size: 22px;
+  font-weight: 400;
+  color: rgb(66, 66, 66);
+  text-align: center;
+}
+
+.hero__button{
+  margin-top: 30px;
+  width: 203px;
+  height: 43px;
+  padding: 10px 30px;
+  border-radius: 3px;
+  border: none;
+  color: white;
+  font-size: 19px;
+  background-color:#387ED1 ;
+  font-weight: 500;
+}
+
