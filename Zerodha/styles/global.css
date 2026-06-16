@@ -84,18 +84,18 @@ nav {
 }
 
 .hero__image {
-  width: 810px;
+  width: 810px; 
   height: 370px;
 }
 
-.hero__heading{
-  font-size: 1.90rem;
-  color:rgb(66, 66, 66);
+.hero__heading {
+  font-size: 1.9rem;
+  color: rgb(66, 66, 66);
   margin-top: 50px;
   font-weight: 500;
 }
 
-.hero__description{
+.hero__description {
   margin-top: 10px;
   font-size: 22px;
   font-weight: 400;
@@ -103,7 +103,7 @@ nav {
   text-align: center;
 }
 
-.hero__button{
+.hero__button {
   margin-top: 30px;
   width: 203px;
   height: 43px;
@@ -112,7 +112,86 @@ nav {
   border: none;
   color: white;
   font-size: 19px;
-  background-color:#387ED1 ;
+  background-color: #387ed1;
   font-weight: 500;
 }
 
+/* Styles for the ecosystem section  */
+
+.ecosystem {
+  height: 754px;
+  margin-top: 130px;
+}
+
+.ecosystem_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 740px;
+}
+
+.ecosystem__left {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 480px;
+  gap: 40px;
+}
+
+.ecosystem__left__heading {
+  font-size: 24px;
+  color: rgb(66, 66, 66);
+  font-weight: 500;
+}
+
+.ecosystem__left__trusts {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.trust h3 {
+  font-size: 20px;
+  color: rgb(66, 66, 66);
+  font-weight: 500;
+}
+
+.trust p {
+  margin-top: 10px;
+  font-size: 16px;
+  color: rgb(102, 102, 102);
+  font-weight: 400;
+  line-height: 29px;
+}
+
+.hightlight {
+  color: #387ed1;
+  cursor: pointer;
+}
+
+.hightlight:hover {
+  color: rgb(68, 68, 68);
+}
+
+.ecosystem__right {
+  margin-top: 20px;
+  height: 100%;
+}
+
+.ecosystem_link {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.ecosystem_link a{
+   text-decoration: none;
+   color: #387ed1;
+   font-size: 16px;
+   font-weight: 500;
+   margin-left: 20px;
+}
+
+.ecosystem_image {
+  width: 695px;
+  height: 680px;
+}
