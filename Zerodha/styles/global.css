@@ -150,13 +150,13 @@ nav {
   gap: 30px;
 }
 
-.trust h3 {
+.heading {
   font-size: 20px;
   color: rgb(66, 66, 66);
   font-weight: 500;
 }
 
-.trust p {
+.description {
   margin-top: 10px;
   font-size: 16px;
   color: rgb(102, 102, 102);
@@ -184,7 +184,7 @@ nav {
   text-align: center;
 }
 
-.ecosystem_link a {
+.link_arrow {
   text-decoration: none;
   color: #387ed1;
   font-size: 16px;
@@ -206,6 +206,7 @@ nav {
 .banner__container {
   height: 87px;
   margin-top: 50px;
+  margin-bottom: 120px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -225,4 +226,26 @@ nav {
   font-size: 14px;
   color: rgb(102, 102, 102);
   padding: 0px 30px;
+  line-height: 24px;
+}
+
+/* Styles for the pricing section  */
+
+.pricing__container{
+  height: 321px;
+  background-color: aquamarine;
+}
+
+.pricing_content{
+  display: flex;
+}
+
+.pricing__right{
+  display: flex;
+}
+
+
+.price img{
+  width: 85px;
+  height: 62px;
 }
